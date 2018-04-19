@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.victor.tictactoe.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/tic_tac"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/game_menu"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/play_game_button"
+        style="@style/MainLayoutButtonStyle"
+        android:background="@drawable/rounded_corner_style"
+        android:maxHeight="50dp"
+        android:maxWidth="150dp"
+        android:text="@string/option_play_game"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_green_light" />
+
+    <Button
+        android:id="@+id/how_to_play"
+        style="@style/MainLayoutButtonStyle"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corner_style"
+        android:maxHeight="50dp"
+        android:maxWidth="150dp"
+        android:text="@string/game_instructions"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

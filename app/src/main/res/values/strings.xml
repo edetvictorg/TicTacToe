@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!-- Text for button reset -->
+    <string name="reset">Reset</string>
+
+    <!-- Label for Select symbol activity -->
+    <string name="select_symbol_for_game">Select your symbol</string>
+
+    <!-- Label for Score Board -->
+    <string name="score_board">Score Board</string>
+
+    <!-- Play Game -->
+    <string name="option_play_game">Play game</string>
+
+    <!-- Game instructions -->
+    <string name="game_instructions">How to play</string>
+
+    <!-- X Player symbol -->
+    <string name="x_symbol">X</string>
+
+    <!-- O Player symbol -->
+    <string name="o_symbol">O</string>
+
+    <!-- How to play -->
+    <string name="how_to_play">1. Choose your symbol\n
+        2. Play at your turn by placing your symbol into the available slot on the board\n
+        3. You win when you are able to fill an entire row or column or diagonal, with your symbol\n
+        4. The first player to fill a winning set wins the game\n
+    Goodluck!</string>
+
+    <!-- Default score -->
+    <string name="default_score">0</string>
+
+    <!-- Game Menu -->
+    <string name="game_menu">Game Menu</string>
+
+    <!-- X symbol description -->
+    <string name="x_description">This is \'X\' symbol for the player that chooses it</string>
+
+    <!-- O symbol description -->
+    <string name="o_description">This is \'O\' symbol for the player that chooses it</string>
+
+    <!-- Congratulatory message -->
+    <string name="congratulations"> has won the game\nCongratulations!</string>
+</resources>

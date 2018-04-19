@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.victor.tictactoe.SelectSymbolActivity">
+
+    <ImageView
+        android:id="@+id/o_symbol"
+        style="@style/SymbolActivityStyle"
+        android:contentDescription="@string/o_description"
+        android:src="@drawable/o_symbol" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/x_symbol"
+        style="@style/SymbolActivityStyle"
+        android:contentDescription="@string/x_description"
+        android:src="@drawable/x_symbol" />
+</LinearLayout>

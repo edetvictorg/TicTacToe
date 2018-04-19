@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.victor.tictactoe.GameBoardActivity">
+
+    <!-- layout for the score board starts here -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/score_board"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/x_description"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/player_x" />
+
+                <TextView
+                    android:id="@+id/x_score"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:gravity="center"
+                    android:text="@string/default_score"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/o_score"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/black"
+                    android:gravity="center"
+                    android:text="@string/default_score"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/o_description"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/player_o" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- layout for the score board stops here -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:paddingTop="16dp">
+
+    </View>
+
+    <!-- TextView for game status -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <!-- layout for the grid board starts here -->
+    <LinearLayout
+        style="@style/GameBoardStyle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout style="@style/GameBoardLinearLayoutStyle">
+
+            <Button
+                android:id="@+id/x1y1"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/x2y1"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/x3y1"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+
+        </LinearLayout>
+
+        <View style="@style/HorizontalLine" />
+
+        <LinearLayout style="@style/GameBoardLinearLayoutStyle">
+
+            <Button
+                android:id="@+id/x1y2"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/x2y2"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/x3y2"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+        </LinearLayout>
+
+        <View style="@style/HorizontalLine" />
+
+        <LinearLayout style="@style/GameBoardLinearLayoutStyle">
+
+            <Button
+                android:id="@+id/x1y3"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/x2y3"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+            <View style="@style/VerticalLine" />
+
+            <Button
+                android:id="@+id/x3y3"
+                style="@style/GameBoardGridStyle"
+                android:onClick="play" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- layout for the grid board stops here -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_corner_style"
+        android:onClick="resetGame"
+        android:text="@string/reset"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>
